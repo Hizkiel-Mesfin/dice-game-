@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/66b6a767f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <title>The Boring Game</title>
+  </head>
+  <body>
+    <header>
+      <a href="#pop" class="rule">HOW TO PLAY</a>
+
+      <div id="pop" class="pop-up">
+
+        <div class="pop-content">
+          <p class="rule-num">Rule #1</p>
+          <p class="rule-dis">Roll the dice when it is your turn ... do you understand my Audi ? Ok good. let's move to rule #2</p>
+          <p class="rule-num">Rule #2:</p>
+          
+          <p class="rule-dis">If you roll 1 you lose your turn and the other player rolls</p>
+          <p class="rule-num">Rule #3:</p>
+          <p class="rule-dis">You can store your points by adding it to the score, but then you lose your turn</p>
+          <p class="rule-num">Rule #4:</p>
+          <p class="rule-dis">The player who reaches 100 points first wins the game</p>
+
+          <p> GOOD LUCK MY AUDI!!</p>
+          <p> ENJOY BORING YOURSELF!</p>
+        </div>
+        <a class="btn-close" href="#close">CLOSE</a>
+      </div>
+    </header>
+    <main class="main" id="close">
+      <div class="grid-container">
+        <section class="player player-1">
+          <p class="name name-1">Player 1</p>
+          <p class="score-head">Score</p>
+          <p class="score score-1">22</p>
+          <p class="winner winner-1">Winner!!</p>
+          <div class="current-score-box">
+            <p class="current">Current score</p>
+            <p class="current-score current-score-1">0</p>
+          </div>
+        </section>
+
+        <section class="player player-2 players-turn">
+          <p class="name name-2">Player 2</p>
+          <p class="score-head">Score</p>
+          <p class="score score-2">22</p>
+          <p class="winner winner-2">Winner!!</p>
+
+          <div class="current-score-box">
+            <p class="current">Current score</p>
+            <p class="current-score current-score-2">0</p>
+          </div>
+        </section>
+      </div>
+
+      <img class="dice-img" src="img/dice-1.png" alt="dice" />
+      <button class="btn btn-roll">
+        <i class="fa-solid fa-dice"></i><p class="btn-name"> Roll Dice</p>
+      </button>
+      <button class="btn btn-new">
+        <i class="fa-solid fa-arrow-rotate-right"></i><p class="btn-name">
+           New Game
+                </button>
+        </p>
+      <button class="btn btn-add">
+        <i class="fa-solid fa-cart-plus"></i> <p class="btn-name">Add To Score</p>
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
